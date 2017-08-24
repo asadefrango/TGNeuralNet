@@ -40,12 +40,12 @@ int main(int argc, char **argv){
 		
 			case 'e':
 				saida=optarg;
-				printf("Nome do arquivo de saida: %d\n", saida);
+				printf("Nome do arquivo de saida: %s\n", saida);
 				break;
 		
 			case 's':
 				entrada=optarg;
-				printf("Nome do arquivo de entrada: %d\n", entrada);
+				printf("Nome do arquivo de entrada: %s\n", entrada);
 				break;
 		
 			default:
