@@ -60,11 +60,12 @@ int main(int argc, char **argv){
 		fprintf(stderr, "%s\nparametros:\n-n arquivo com a rede\n-t arquivo de treino\n-m numero maximo de epocas\n-r numero de epocas ate reportar o resultado parcial\n-e erro desejado\n-s nome do arquivo de saida\n", argv[0]);
 		exit(EXIT_FAILURE);
 	}
-	load_neural_net_from_file(rede);
+struct fann * ann = load_neural_net_from_file(rede);
 	sprintf(tmp,"\nrede carregada de %s",rede);
 	set_log(tmp);
 	
 	
+train(ann,treino,max,report,erro,saida );
 
 
 	sprintf(tmp,"\nFIM TRAIN\n ");
