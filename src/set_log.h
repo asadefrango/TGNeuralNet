@@ -11,6 +11,8 @@ void set_log( char * mensagem){      // log error
 
 	fprintf(log_file,"%s\n",mensagem);
 
+	fclose(log_file);
+	log_file = NULL;
 }
 
 

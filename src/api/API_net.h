@@ -1,28 +1,12 @@
+#ifndef API_H
+#define API_H
 #include <stdio.h>
 #include <stdlib.h>
-#include "fann/floatfann.h"
-
+#include "../fann/floatfann.h"
 
 FILE file_name;
 
 unsigned int rec_log = 1;
-void set_rec_log(unsigned int flag_rec){
-    rec_log = flag_rec;
-}
-
-static void set_log( char * mensagem){      // log error
-    FILE *log_file = fopen("log.txt", "a");
-    if (log_file == NULL){
-        printf("Error opening log file!\n");
-        exit(1);
-    }
-
-    if(rec_log){
-        fprintf( log_file,"%s",mensagem );
-    }
-
-    fclose(log_file);
-}
 
 struct fann * create_neural_net( const unsigned int* layers,
                                 unsigned int size_layer,
@@ -32,7 +16,6 @@ struct fann * create_neural_net( const unsigned int* layers,
     struct fann * ann;
     char * log_men;
     log_men = "Numero de layers ";
-   // sprintf(log_men,"%s %d",log_men,size_layer);
 
     if(shortcut)
         ann = fann_create_shortcut_array(size_layer,layers);
@@ -44,7 +27,7 @@ struct fann * create_neural_net( const unsigned int* layers,
 
     set_log("rede criada\n");
 
-    //free(log_men);
+    free(log_men);
     log_men= NULL;
     return ann;
 
@@ -66,7 +49,7 @@ void train(struct fann * ann,
            const char * train_file,
            unsigned int max_epochs,
            unsigned int epochs_between_reports,
-           unsigned int desired_error,
+           float desired_error,
            const char * file_save ){
 
     fann_train_on_file(ann, train_file, max_epochs, epochs_between_reports, desired_error);
@@ -109,7 +92,7 @@ static int readFile(char * file_name, float * data){
 
 
     if ((file=fopen(file_name, "rb")) == NULL) {
-        // error log and exit
+    // error log and exit
     }
 
     int i = 0 ;
@@ -141,8 +124,9 @@ void exec_neural_net(char * file_name, struct fann * ann){
         data_to_vec_input(normalized_vector(temp_input,fann_get_num_input),input,fann_get_num_input(ann));
         calc_out = fann_run(ann, input); // exec calc output from ann
     }
-
+	
 
 }
 
 
+#endif // API_H

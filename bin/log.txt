@@ -1,0 +1,100 @@
+
+
+CREATE
+
+arquivo de entrada lista
+
+numero de layers 2
+
+numero de neuronios no layer 1 10
+
+numero de neuronios no layer 1 9
+
+ funcao ativacao layer 1 10
+
+ funcao ativacao layer 1 9
+rede criada
+
+
+FIM CREATE
+ 
+
+
+CREATE
+
+arquivo de entrada lista
+
+numero de layers 2
+
+numero de neuronios no layer 1 10
+
+numero de neuronios no layer 1 9
+
+ funcao ativacao layer 1 10
+
+funcao ativacao layer 1 9
+rede criada
+
+
+
+CREATE
+
+
+CREATE
+
+arquivo de entrada (null)
+
+
+CREATE
+
+
+CREATE
+
+
+CREATE
+
+
+CREATE
+
+
+CREATE
+
+
+TRAIN
+
+rede carregada de (null)
+
+FIM TRAIN
+ 
+
+
+TRAIN
+
+rede carregada de aas
+
+FIM TRAIN
+ 
+
+
+TRAIN
+
+
+TRAIN
+
+
+TRAIN
+
+
+TRAIN
+
+
+TRAIN
+
+
+TRAIN
+
+
+TRAIN
+
+
+CREATE

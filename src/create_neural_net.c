@@ -3,61 +3,86 @@
 #include <stdio.h>
 #include <unistd.h>
 #include "set_log.h"
-#include "fann/floatfann.h"
-/*
-struct fann * create_neural_net( const unsigned int* layers,
-		unsigned int size_layer,
-		unsigned int shortcut,
-		unsigned int * layer_activation_function ){
-	size_t count_layer;
-	struct fann * ann;
+#include "api/API_net.h"
 
-	if(shortcut)
-		ann = fann_create_shortcut_array(size_layer,layers);
-	else
-		ann = fann_create_standard_array(size_layer,layers);
-
-	for(count_layer=1;count_layer<size_layer;count_layer++)
-		fann_set_activation_function_layer( ann,layer_activation_function[count_layer],count_layer);
-
-	set_log("rede criada\n");
-
-	//free(log_men);
-	return ann;
-
-}
-*/
 int main(int argc, char **argv){
-
+	set_log("\n\nCREATE");
 	bool isCaseInsensitive = false;
-	int opt;
-	
+	int opt,i;
+	FILE *fentrada;
 	char *entrada=NULL;
 	char *saida=NULL;
+	char tmp[100];
 
+	int numero_layers,*layers,atalhos,*func_ativ;
 	while ((opt = getopt(argc, argv, "e:s:")) != -1) {
 		switch (opt) {
-		
-			case 'e':
+
+			case 's':
 				saida=optarg;
 				printf("Nome do arquivo de saida: %s\n", saida);
 				break;
-		
-			case 's':
+
+			case 'e':
 				entrada=optarg;
 				printf("Nome do arquivo de entrada: %s\n", entrada);
 				break;
-		
+
 			default:
-				fprintf(stderr, "Usage: %s [-es] [file...]\n", argv[0]);
+				fprintf(stderr, "%s \nparametros:\n-e arquivo de entrada\n-s arquivo de saida\n", argv[0]);
 				exit(EXIT_FAILURE);
 		}
 
 	}
+	if(opterr){
+		fprintf(stderr, "%s \nparametros:\n-e arquivo de entrada\n-s arquivo de saida\n", argv[0]);
+		exit(EXIT_FAILURE);
 
-		
-	
+	}
+	fentrada = fopen(entrada,"r");
+
+	sprintf(tmp,"\narquivo de entrada %s",entrada);
+	set_log(tmp);
+
+	fscanf(fentrada,"%d",&numero_layers); //numero layers
+	sprintf(tmp,"\nnumero de layers %d",numero_layers);
+	set_log(tmp);
+
+	layers = (int*)malloc(sizeof(int)); 
+	fscanf(fentrada,"%d",&layers[0]); // layer
+	sprintf(tmp,"\nnumero de neuronios no layer 1 %d",layers[0]);
+	set_log(tmp);
+
+	for(i = 1 ; i < numero_layers; i++){
+		layers = (int*)realloc(layers,i*sizeof(int));
+		fscanf(fentrada,"%d",&layers[i]);
+		sprintf(tmp,"\nnumero de neuronios no layer %d %d",i,layers[i]);
+		set_log(tmp);
+	}
+	fscanf(fentrada,"%d",&atalhos); //atalhos
+
+	func_ativ = malloc(sizeof(int));
+	fscanf(fentrada,"%d",&func_ativ[0]);
+	sprintf(tmp,"\n funcao ativacao layer 1 %d",layers[0]);
+	set_log(tmp);
+	for(i = 1; i < numero_layers; i++){
+		func_ativ = realloc(func_ativ,i*sizeof(int));
+		fscanf(fentrada,"%d",&func_ativ[i]);
+		sprintf(tmp,"\nfuncao ativacao layer %d %d",i,layers[i]);
+		set_log(tmp);
+	}
+
+	save_neural_net(create_neural_net(layers, numero_layers, atalhos, func_ativ ),saida);
 
 
-	
+	sprintf(tmp,"\nFIM CREATE\n ");
+	set_log(tmp);
+	fclose(fentrada);
+	free(entrada);
+	entrada = NULL;
+	free(saida);
+	saida = NULL;
+	free(layers);
+	layers = NULL;
+
 }
