@@ -37,7 +37,7 @@ int main(int argc, char **argv){
 
 			case 'r':
 				report=strtoul(optarg,&tmp,10);
-				printf("Numero maximo de epocas: %d\n",report);
+				printf("Numero de epocas ate reportar: %d\n",report);
 				break;
 
 			case 'e':
@@ -63,6 +63,9 @@ int main(int argc, char **argv){
 	load_neural_net_from_file(rede);
 	sprintf(tmp,"\nrede carregada de %s",rede);
 	set_log(tmp);
+	
+	
+
 
 	sprintf(tmp,"\nFIM TRAIN\n ");
 	set_log(tmp);
