@@ -15,7 +15,7 @@ int main(int argc, char **argv){
 	char tmp[100];
 
 	int numero_layers,*layers,atalhos,*func_ativ;
-	while ((opt = getopt(argc, argv, "e:s:")) != -1) {
+	while ((opt = getopt(argc, argv, "e:s:r:")) != -1) {
 		switch (opt) {
 
 			case 's':
@@ -28,19 +28,21 @@ int main(int argc, char **argv){
 				printf("Nome do arquivo de entrada: %s\n", entrada);
 				break;
 
+			case 'r':
+				rede=optarg;
+				printf("Nome do arquivo da rede: %s\n", rede);
+				break;
 			default:
-				fprintf(stderr, "%s \nparametros:\n-e arquivo de entrada\n-s arquivo de saida\n", argv[0]);
+				fprintf(stderr, "%s \nparametros:\n-e arquivo de entrada\n-s arquivo de saida\n-r arquivo com a rede\n", argv[0]);
 				exit(EXIT_FAILURE);
 		}
 
 	}
 	if(opterr){
-		fprintf(stderr, "%s \nparametros:\n-e arquivo de entrada\n-s arquivo de saida\n", argv[0]);
+				fprintf(stderr, "%s \nparametros:\n-e arquivo de entrada\n-s arquivo de saida\n-r arquivo com a rede\n", argv[0]);
 		exit(EXIT_FAILURE);
 
 	}
-	fentrada = fopen(entrada,"r");
-
 	sprintf(tmp,"\narquivo de entrada %s",entrada);
 	set_log(tmp);
 

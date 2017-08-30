@@ -107,7 +107,7 @@ static int readFile(char * file_name, float * data){
     return i;
 }
 
-void exec_neural_net(char * file_name, struct fann * ann){
+void exec_neural_net(char * file_name, struct fann * ann, char * file_out){
 
     fann_type *input;
     fann_type *calc_out;
@@ -117,15 +117,21 @@ void exec_neural_net(char * file_name, struct fann * ann){
     size_data_file = readFile(file_name,&data_file);
     temp_input = malloc(fann_get_num_input(ann)*sizeof(fann_type));
     input = malloc(fann_get_num_input(ann)*sizeof(fann_type));
-    int i,j;
+    int i,j,k;
+    FILE * pf;
+    pf = fopen(file_out,"w");
     for(i = 0; i < size_data_file; i++){
-        for(j = i; fann_get_num_input(ann); j++)
-            temp_input[j-i] = data_file[j];
-        data_to_vec_input(normalized_vector(temp_input,fann_get_num_input),input,fann_get_num_input(ann));
-        calc_out = fann_run(ann, input); // exec calc output from ann
-    }
-	
+	    for(j = i; fann_get_num_input(ann); j++)
+		    temp_input[j-i] = data_file[j];
+	    data_to_vec_input(normalized_vector(temp_input,fann_get_num_input),input,fann_get_num_input(ann));
+	    calc_out = fann_run(ann, input); // exec calc output from ann
 
+	    for(k=0;k<fann_get_num_output(ann);k++)
+		    fprintf(pf,"%f\n",calc_out[k]);
+
+    }
+    fclose(pf);
+    pf=NULL;
 }
 
 
