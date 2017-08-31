@@ -14,8 +14,6 @@ struct fann * create_neural_net( const unsigned int* layers,
                                 unsigned int * layer_activation_function ){
     size_t count_layer;
     struct fann * ann;
-    char * log_men;
-    log_men = "Numero de layers ";
 
     if(shortcut)
         ann = fann_create_shortcut_array(size_layer,layers);
@@ -27,8 +25,6 @@ struct fann * create_neural_net( const unsigned int* layers,
 
     set_log("rede criada\n");
 
-    free(log_men);
-    log_men= NULL;
     return ann;
 
 }

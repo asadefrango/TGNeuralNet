@@ -608,3 +608,24 @@ arquivo de entrada lista
 numero de layers 2
 
 numero de neuronios no layer 1 10
+
+
+GEN_TRAIN
+
+FIM GEN_TRAIN
+
+
+
+GEN_TRAIN
+
+FIM GEN_TRAIN
+
+
+
+GEN_TRAIN
+
+FIM GEN_TRAIN
+
+
+
+GEN_TRAIN

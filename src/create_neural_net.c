@@ -4,29 +4,38 @@
 #include <unistd.h>
 #include "set_log.h"
 #include "api/API_net.h"
-
 int main(int argc, char **argv){
 	set_log("\n\nCREATE");
 	bool isCaseInsensitive = false;
 	int opt,i;
+	unsigned int errS=0,errE=0 ;
 	FILE *fentrada;
 	char *entrada=NULL;
 	char *saida=NULL;
 	char tmp[100];
-
 	int numero_layers,*layers,atalhos,*func_ativ;
+	if( argc <= 1) {
+		fprintf(stderr, "\nparametros:\n-e arquivo de entrada\n-s arquivo de saida\n");
+		exit(EXIT_FAILURE);
+	}
 	while ((opt = getopt(argc, argv, "e:s:")) != -1) {
 		switch (opt) {
 
 			case 's':
 				saida=optarg;
 				printf("Nome do arquivo de saida: %s\n", saida);
+				errS++;
 				break;
 
 			case 'e':
 				entrada=optarg;
 				printf("Nome do arquivo de entrada: %s\n", entrada);
+				errE++;
 				break;
+
+
+			case '?':
+				fprintf(stderr, "\nFALTA PARAMETROS\n");
 
 			default:
 				fprintf(stderr, "%s \nparametros:\n-e arquivo de entrada\n-s arquivo de saida\n", argv[0]);
@@ -34,11 +43,15 @@ int main(int argc, char **argv){
 		}
 
 	}
-	if(opterr){
-		fprintf(stderr, "%s \nparametros:\n-e arquivo de entrada\n-s arquivo de saida\n", argv[0]);
-		exit(EXIT_FAILURE);
-
+	if (!(errS&errE)) {
+		fprintf(stderr, "\nFALTA ARGUMENTOS\n");
+		if(!errS)
+			fprintf(stderr, "-s NOME ARQUIVO SAIDA \n");
+		if(!errE)
+			fprintf(stderr, "-e NOME ARQUIVO ENTRADA \n");
+		exit(1);
 	}
+
 	fentrada = fopen(entrada,"r");
 
 	sprintf(tmp,"\narquivo de entrada %s",entrada);
@@ -74,15 +87,8 @@ int main(int argc, char **argv){
 
 	save_neural_net(create_neural_net(layers, numero_layers, atalhos, func_ativ ),saida);
 
-
 	sprintf(tmp,"\nFIM CREATE\n ");
 	set_log(tmp);
 	fclose(fentrada);
-	free(entrada);
-	entrada = NULL;
-	free(saida);
-	saida = NULL;
-	free(layers);
-	layers = NULL;
 
 }
