@@ -1,5 +1,5 @@
 COISAS= -O2 -Isrc/fann -Lsrc/fann -lfloatfann -lm 
-all:	create train 
+all:	create train exec 
 
 create: src/create_neural_net.c src/set_log.h src/api/API_net.h
 	gcc  src/create_neural_net.c $(COISAS) -o bin/create
@@ -9,7 +9,12 @@ train: src/train_neural_net.c src/set_log.h src/api/API_net.h
 	gcc src/train_neural_net.c $(COISAS) -o bin/train 
 	@echo TRAIN compilado
 
+exec: src/exec_neural_net.c src/set_log.h src/api/API_net.h
+	gcc src/exec_neural_net.c $(COISAS) -o bin/exec 
+	@echo EXEC compilado
 clean: 
 	@echo 'removendo arquivos'
 		rm bin/create 
+		rm bin/train
+		rm bin/exec
 
