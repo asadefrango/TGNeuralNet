@@ -8,19 +8,40 @@
 int main(int argc, char **argv){
 	set_log("\n\nGEN_TRAIN");
 	bool isCaseInsensitive = false;
-	int opt,i;
+	int opt,i,dt;
 	FILE *fsaida;
 	char *entrada=NULL;
 	char *saida=NULL;
+	char *lista=NULL;
 	char tmp[100];
-	float *data;
-	int numero_layers,*layers,atalhos,*func_ativ;
-	while ((opt = getopt(argc, argv, "e:s:")) != -1) {
+	float *data,tr,*picks;
+	int numero_entrada,numero_saida,pick;
+	while ((opt = getopt(argc, argv, "l:s:i:o:p:e:t:d:")) != -1) {
 		switch (opt) {
+
+			case 'l':
+				lista=optarg;
+				printf("Nome do arquivo com lista de picks: %s\n", lista);
+				break;
 
 			case 's':
 				saida=optarg;
 				printf("Nome do arquivo de saida: %s\n", saida);
+				break;
+
+			case 'i':
+				numero_entrada=atoi(optarg);
+				printf("Numero de entradas: %d\n", numero_entrada);
+				break;
+
+			case 'o':
+				numero_saida=atoi(optarg);
+				printf("Numero de saidas: %d\n", numero_saida);
+				break;
+
+			case 'p':
+				pick=atoi(optarg);
+				printf("posicao do pick na janela %d\n", pick);
 				break;
 
 			case 'e':
@@ -28,61 +49,43 @@ int main(int argc, char **argv){
 				printf("Nome do arquivo de entrada: %s\n", entrada);
 				break;
 
+			case 't':
+				tr=atoi(optarg);
+				printf("Numero de saidas: %d\n",tr);
+				break;
+
+			case 'd':
+				dt=atof(optarg);
+				printf("Numero de saidas: %f\n",dt);
+				break;
+
 			default:
-				fprintf(stderr, "%s \nparametros:\n-e arquivo de entrada\n-s arquivo de saida\n", argv[0]);
+				fprintf(stderr, "%s \nparametros:\n-l lista de picks(tempo)\n-e arquivo de entrada\n-s arquivo de saida\n-i numero de entradas\n-o numero de saidas\n-p posicao do pick na janela\n-t numero de tracos\n-dtaxa de amostragem", argv[0]);
 				exit(EXIT_FAILURE);
 		}
 
 	}
 	if(opterr){
-		fprintf(stderr, "%s \nparametros:\n-e arquivo de entrada\n-s arquivo de saida\n", argv[0]);
+				fprintf(stderr, "%s \nparametros:\n-e arquivo de entrada\n-s arquivo de saida\n-i numero de entradas\n-o numero de saidas\n-p posicao do pick na janela\n-t numero de tracos\n-dtaxa de amostragem", argv[0]);
 		exit(EXIT_FAILURE);
-
 	}
+
 	sprintf(tmp,"\narquivo de entrada %s",entrada);
 	set_log(tmp);
 
 	sprintf(tmp,"\narquivo de saida %s",saida);
 	set_log(tmp);
 
-
 	sprintf(tmp,"\nlendo arquivo de entrada...");
 	set_log(tmp);
 
 	readFile(entrada,data);
-
+	readFile(lista,picks);
+	
 	
 
-	for(i = 1 ; i < numero_layers; i++){
-		layers = (int*)realloc(layers,i*sizeof(int));
-		fscanf(fentrada,"%d",&layers[i]);
-		sprintf(tmp,"\nnumero de neuronios no layer %d %d",i,layers[i]);
-		set_log(tmp);
-	}
-	fscanf(fentrada,"%d",&atalhos); //atalhos
-
-	func_ativ = malloc(sizeof(int));
-	fscanf(fentrada,"%d",&func_ativ[0]);
-	sprintf(tmp,"\n funcao ativacao layer 1 %d",layers[0]);
-	set_log(tmp);
-	for(i = 1; i < numero_layers; i++){
-		func_ativ = realloc(func_ativ,i*sizeof(int));
-		fscanf(fentrada,"%d",&func_ativ[i]);
-		sprintf(tmp,"\nfuncao ativacao layer %d %d",i,layers[i]);
-		set_log(tmp);
-	}
-
-	save_neural_net(create_neural_net(layers, numero_layers, atalhos, func_ativ ),saida);
-
-
+       
 	sprintf(tmp,"\nFIM GEN_TRAIN\n ");
 	set_log(tmp);
-	fclose(fentrada);
-	free(entrada);
-	entrada = NULL;
-	free(saida);
-	saida = NULL;
-	free(layers);
-	layers = NULL;
 
 }
