@@ -8,16 +8,16 @@
 int main(int argc, char **argv){
 	set_log("\n\nGEN_TRAIN");
 	bool isCaseInsensitive = false;
-	unsigned int errL=0,errS=0,errI=0,errO=0,errP=0,errE=0,errT=0,errD=0;
-	int opt,i,dt;
+	unsigned int errL=0,errS=0,errI=0,errO=0,errP=0,errE=0,errT=0,errD=0,errX=0;
+	int opt,i;
 	FILE *fsaida;
 	char *entrada=NULL;
 	char *saida=NULL;
 	char *lista=NULL;
 	char tmp[100];
-	float *data,tr,*picks;
+	float *data,tr,t,dt,*picks;
 	int numero_entrada,numero_saida,pick;
-	while ((opt = getopt(argc, argv, "l:s:i:o:p:e:t:d:")) != -1) {
+	while ((opt = getopt(argc, argv, "l:s:i:o:p:e:t:d:x:")) != -1) {
 		switch (opt) {
 
 			case 'l':
@@ -58,28 +58,34 @@ int main(int argc, char **argv){
 
 			case 't':
 				tr=atoi(optarg);
-				printf("Numero de tracos: %d\n",tr);
+				printf("Numero de Tracos: %d\n",tr);
 				errT++;
 				break;
 
 			case 'd':
-				dt=atof(optarg);
-				printf("Numero de amostras por traco: %f\n",dt);
+				t=atof(optarg);
+				printf("Numero de amostras por traco: %f\n",t);
 				errD++;
+				break;
+
+			case 'x':
+				dt=atof(optarg);
+				printf("taxa de amostragem: %f\n",dt);
+				errX++;
 				break;
 
 			case '?':
 				fprintf(stderr, "\nFALTA PARAMETROS\n");
 
 			default:
-				fprintf(stderr, "%s \nparametros:\n-l lista de picks(numero do pick absoluto)\n-e arquivo de entrada\n-s arquivo de saida\n-i numero de entradas\n-o numero de saidas\n-p posicao do pick na janela\n-t numero de tracos\n-dnumero de amostras por traco", argv[0]);
+				fprintf(stderr, "%s \nparametros:\n-l lista de picks(numero do pick absoluto)\n-e arquivo de entrada\n-s arquivo de saida\n-i numero de entradas\n-o numero de saidas\n-p posicao do pick na janela\n-t numero de tracos\n-d numero de amostras por traco \n-x taxa de amostragem", argv[0]);
 				exit(EXIT_FAILURE);
 		}
 
 	}
-
-	if(!(errL&errS&errI&errO&errP&errE&errT&errD)) {
-		fprintf(stderr, "\nFALTA ARGUMENTOS\n");
+	int aa = errL&errS&errI&errO&errP&errE&errT&errD&errX;
+	if(!(aa)) {
+		fprintf(stderr, "\nFALTA ARGUMENTOS %d\n",aa );
 		if(!errS)
 			fprintf(stderr, "-s NOME ARQUIVO SAIDA\n");
 		if(!errE)
@@ -87,7 +93,7 @@ int main(int argc, char **argv){
 		if(!errL)
 			fprintf(stderr, "-l NOME DO ARQUIVO COM LISTA DE PICKS\n");
 		if(!errI)
-			fprintf(stderr, "-i NOME DO ARQUIVO DE SAIDA\n");
+			fprintf(stderr, "-i NUMERO DE ENTRADAS\n");
 		if(!errO)
 			fprintf(stderr, "-o NUMERO DE SAIDAS\n");
 		if(!errP)
@@ -96,6 +102,9 @@ int main(int argc, char **argv){
 			fprintf(stderr, "-t NUMERO DE TRACOS\n");
 		if(!errD)
 			fprintf(stderr, "-d NUMERO DE AMOSTRAS POR TRACO \n");
+		if(!errX)
+			fprintf(stderr, "-x TAXA DE AMOSTRAGEM \n");
+
 		exit(EXIT_FAILURE);
 	}
 
@@ -111,7 +120,7 @@ int main(int argc, char **argv){
 	readFile(entrada,data);
 	sprintf(tmp,"\nlendo list de picks...");
 	set_log(tmp);
-	int lenPick = readFile(lista,picks);
+	int lenPick = readFilePicks(lista,picks,dt,t);
 	int *index;
 	int j=1,k,x;
 

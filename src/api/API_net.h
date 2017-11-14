@@ -103,6 +103,28 @@ int readFile(char * file_name, float * data){
     return i;
 }
 
+int readFilePicks(char * file_name, float * data, float dt, float sample_tr){
+    FILE * file;
+    float time,tr;
+    data = NULL;
+
+
+    if ((file=fopen(file_name, "r")) == NULL) {
+    // error log and exit
+    }
+
+    int i = 0 ;
+    data = malloc( sizeof(float) );
+    while(scanf(file,"%f,%f",time,tr)){
+        if(i)
+            data = realloc( data, (i+1)*sizeof(float) );
+        data[i++] = time/dt + (tr-1)*sample_tr;
+
+    }
+
+    return i;
+}
+
 void exec_neural_net(char * file_name, struct fann * ann, char * file_out){
 
     fann_type *input;
