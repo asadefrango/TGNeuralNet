@@ -157,7 +157,7 @@ int main(int argc, char **argv){
 
 		
 	FILE *fsaida;
-	if((fsaida = fopen(saida,'w')) == NULL) {
+	if((fsaida = fopen(saida,"w")) == NULL) {
 		printf("ERRO ARQUIVO DE SAIDA NAO GRAVADO %s",saida);
 		return 0;
 		// error log and exit
