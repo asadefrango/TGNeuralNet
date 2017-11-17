@@ -16,5 +16,5 @@ echo -e " ${GREEN} EXECUTANDO ${RED} TRAIN ${NC}  "
 echo -e " ${GREEN} FIM DE  ${YELLOW} TRAIN ${NC}  "
 
 echo -e " ${GREEN} EXECUTANDO ${RED} EXEC_NEURAL ${NC}  "
-./bin/exec_neural -s ./bin/linha_pick.asc -e ./bin/linha10.asc -r ./bin/rede_treinada.net 
+./bin/exec -s ./bin/linha_pick.asc -e ./bin/1.bin -r ./bin/rede_treinada.net 
 echo -e " ${GREEN} FIM DE  ${YELLOW} EXEC_NEURAL ${NC}  "
