@@ -1,0 +1,1776 @@
+
+
+CREATE
+
+arquivo de entrada net_par
+
+
+GEN_TRAIN
+
+arquivo de entrada linha10.asc
+
+arquivo de saida treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+TRAIN
+
+rede carregada de rede.net
+
+
+CREATE
+
+arquivo de entrada net_par
+
+
+GEN_TRAIN
+
+arquivo de entrada linha10.asc
+
+arquivo de saida treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada net_par
+
+
+GEN_TRAIN
+
+arquivo de entrada linha10.asc
+
+arquivo de saida treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada net_par
+
+
+GEN_TRAIN
+
+arquivo de entrada linha10.asc
+
+arquivo de saida treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+TRAIN
+
+rede carregada de rede.net
+
+
+CREATE
+
+arquivo de entrada net_par
+
+
+CREATE
+
+arquivo de entrada net_par
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 10
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 10
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/linha10.asc
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/linha10.asc
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/linha10.asc
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/linha10.asc
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/linha10.asc
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/linha10.asc
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/linha10.asc
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/linha10.asc
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/linha10.asc
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/linha10.asc
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/linha10.asc
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/linha10.asc
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/linha10.asc
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/linha10.asc
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/linha10.asc
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida -s
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+FIM TRAIN
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+FIM TRAIN
+ 
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+FIM TRAIN
+ 
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+FIM TRAIN
+ 
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+FIM TRAIN
+ 
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+FIM TRAIN
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+FIM TRAIN
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+FIM TRAIN
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino
+
+lendo arquivo de entrada...
+
+lendo list de picks...

@@ -1,6 +1,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
 #include "set_log.h"
 #include "api/API_net.h"
@@ -10,7 +11,6 @@ int main(int argc, char **argv){
 	bool isCaseInsensitive = false;
 	unsigned int errL=0,errS=0,errI=0,errO=0,errP=0,errE=0,errT=0,errD=0,errX=0;
 	int opt,i;
-	FILE *fsaida;
 	char *entrada=NULL;
 	char *saida=NULL;
 	char *lista=NULL;
@@ -117,25 +117,32 @@ int main(int argc, char **argv){
 	sprintf(tmp,"\nlendo arquivo de entrada...");
 	set_log(tmp);
 
-	readFile(entrada,data);
+	int lenFile = readFile(entrada,&data);
+	printf("lenfile = %d",lenFile);
 	sprintf(tmp,"\nlendo list de picks...");
 	set_log(tmp);
-	int lenPick = readFilePicks(lista,picks,dt,t);
+	int lenPick = readFilePicks(lista,&picks,dt,t);
+	printf("lenpick = %d",lenPick);
 	int *index;
-	int j=1,k,x;
+	int j=-1,k,x;
 
-	index =(int *) malloc(sizeof(int));
-	for(k = 0; k < tr*dt; k +=dt )
-		for(i = - numero_entrada ; i < dt + numero_entrada ; i++){
+	float *res;
+	res = (float  *)malloc(numero_entrada*sizeof(float));
+	
+	for(k = 0; k < tr*t; k +=t )
+		for(i = -numero_entrada-2 ; i < t + numero_entrada+2 ; i++){
+			
+			if(!++j)
+				index =(int *) malloc(sizeof(int));
 
-			if( i < 0 || i >= dt )
+			else
+				index = (int *) realloc(index,(j+1)*sizeof(int));
+
+			if( i < 0 || i >= t )
 				index[j] = -1;  
 			else 
 				index[j]=i+k;
-			index = (int *) realloc(index,++j*sizeof(int));
 		}
-	float *res;
-	res = (float  *)malloc(numero_entrada*sizeof(float));
 	for(i = 0; i < lenPick; i++){
 		for(k = 0; k < j; k++)
 			if(picks[i]==index[k])
@@ -148,7 +155,14 @@ int main(int argc, char **argv){
 				}
 	}
 
-	fsaida = fopen(saida,'w');	
+		
+	FILE *fsaida;
+	if((fsaida = fopen(saida,'w')) == NULL) {
+		printf("ERRO ARQUIVO DE SAIDA NAO GRAVADO %s",saida);
+		return 0;
+		// error log and exit
+	}
+
 	fprintf(fsaida,"%d %d %d\n",lenPick,numero_entrada,numero_saida);
 	for(i = 0 ; i < lenPick; i++){
 		for(x = 0 ; x < numero_entrada ; x++)

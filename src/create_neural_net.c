@@ -76,7 +76,7 @@ int main(int argc, char **argv){
 
 	func_ativ = malloc(sizeof(int));
 	fscanf(fentrada,"%d",&func_ativ[0]);
-	sprintf(tmp,"\n funcao ativacao layer 1 %d",layers[0]);
+	sprintf(tmp,"\n funcao ativacao layer 1 %d",layers[0]); //func at
 	set_log(tmp);
 	for(i = 1; i < numero_layers; i++){
 		func_ativ = realloc(func_ativ,i*sizeof(int));

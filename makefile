@@ -1,4 +1,4 @@
-COISAS= -O2 -Isrc/fann -g -Lsrc/fann -lfloatfann -lm 
+COISAS= -O0 -Isrc/fann -g -Lsrc/fann -lfloatfann -lm 
 all:	create train exec gen_train 
 
 create: src/create_neural_net.c src/set_log.h src/api/API_net.h
