@@ -12,7 +12,8 @@ echo -e " ${GREEN} EXECUTANDO ${RED} GEN_TRAIN ${NC}  "
 echo -e " ${GREEN} FIM DE  ${YELLOW} GEN_TRAIN ${NC} "
 
 echo -e " ${GREEN} EXECUTANDO ${RED} TRAIN ${NC}  "
-./bin/train -s ./bin/rede_treinada.net -e 0.01 -r 1000 -m 10000 -t ./bin/treino.tra -n ./bin/rede.net
+#./bin/train -s ./bin/rede_treinada.net -e 0.01 -r 1000 -m 10000 -t ./bin/treino.tra -n ./bin/rede.net
+./bin/train -s ./bin/rede_treinada.net -e 0.01 -r 1000 -m 10000 -t ./bin/arquivo_treino.dat -n ./bin/rede.net
 echo -e " ${GREEN} FIM DE  ${YELLOW} TRAIN ${NC}  "
 
 echo -e " ${GREEN} EXECUTANDO ${RED} EXEC_NEURAL ${NC}  "

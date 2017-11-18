@@ -1994,3 +1994,580 @@ arquivo de saida ./bin/linha_pick.asc
 arquivo de rede ./bin/rede_treinada.net
 
  executando... 
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+FIM GEN_TRAIN
+
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+FIM TRAIN
+ 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+FIM GEN_TRAIN
+
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+FIM TRAIN
+ 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net~
+
+ executando... 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+FIM GEN_TRAIN
+
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+FIM TRAIN
+ 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+FIM EXEC
+ 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+FIM EXEC
+ 
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+FIM GEN_TRAIN
+
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+FIM TRAIN
+ 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+FIM EXEC
+ 
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+FIM GEN_TRAIN
+
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+FIM TRAIN
+ 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+FIM EXEC
+ 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+FIM EXEC
+ 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+FIM EXEC
+ 
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+FIM GEN_TRAIN
+
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+FIM GEN_TRAIN
+
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+FIM TRAIN
+ 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+FIM EXEC
+ 
+
+
+CREATE
+
+arquivo de entrada ./bin/net_par
+
+numero de layers 2
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 1 1
+
+ funcao ativacao layer 1 100
+
+funcao ativacao layer 1 1
+rede criada
+
+
+FIM CREATE
+ 
+
+
+GEN_TRAIN
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/treino.tra
+
+lendo arquivo de entrada...
+
+lendo list de picks...
+
+FIM GEN_TRAIN
+
+
+
+TRAIN
+
+rede carregada de ./bin/rede.net
+
+FIM TRAIN
+ 
+
+
+EXEC
+
+arquivo de entrada ./bin/1.bin
+
+arquivo de saida ./bin/linha_pick.asc
+
+arquivo de rede ./bin/rede_treinada.net
+
+ executando... 
+
+FIM EXEC
+ 

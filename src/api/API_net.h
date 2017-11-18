@@ -136,18 +136,19 @@ void exec_neural_net(char * file_name, struct fann * ann, char * file_out){
 	int size_data_file;
 	size_data_file = readFile(file_name,&data_file);
 	temp_input = malloc(fann_get_num_input(ann)*sizeof(fann_type));
-	input = malloc(fann_get_num_input(ann)*sizeof(fann_type));
+	input = malloc(fann_get_num_input(ann)*sizeof(float));
 	int i,j,k;
 	FILE * pf;
 	pf = fopen(file_out,"w");
 	for(i = 0; i < size_data_file; i++){
-		for(j = i; fann_get_num_input(ann); j++)
+		for(j = i;j <  fann_get_num_input(ann)+i; j++)
 			temp_input[j-i] = data_file[j];
-		data_to_vec_input(normalized_vector(temp_input,(unsigned int *)fann_get_num_input),input,fann_get_num_input(ann));
+		data_to_vec_input(normalized_vector(temp_input,(unsigned int *)fann_get_num_input(ann)),input,fann_get_num_input(ann));
 		calc_out = fann_run(ann, input); // exec calc output from ann
 
 		for(k=0;k<fann_get_num_output(ann);k++)
 			fprintf(pf,"%f\n",calc_out[k]);
+
 
 	}
 	fclose(pf);

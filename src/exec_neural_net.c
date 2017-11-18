@@ -69,12 +69,6 @@ int main(int argc, char **argv){
 	
 	sprintf(tmp,"\nFIM EXEC\n ");
 	set_log(tmp);
-	free(entrada);
-	entrada = NULL;
-	free(saida);
-	saida = NULL;
-	free(rede);
-	rede = NULL;
 
 }
 
