@@ -69,19 +69,20 @@ int main(int argc, char **argv){
 	for(i = 1 ; i < numero_layers; i++){
 		layers = (int*)realloc(layers,i*sizeof(int));
 		fscanf(fentrada,"%d",&layers[i]);
-		sprintf(tmp,"\nnumero de neuronios no layer %d %d",i,layers[i]);
+		sprintf(tmp,"\nnumero de neuronios no layer %d %d",i+1,layers[i]);
 		set_log(tmp);
 	}
 	fscanf(fentrada,"%d",&atalhos); //atalhos
-
+	sprintf(tmp,"\n atalhos? %d",atalhos); //atalhos
+	set_log(tmp);
 	func_ativ = malloc(sizeof(int));
 	fscanf(fentrada,"%d",&func_ativ[0]);
-	sprintf(tmp,"\n funcao ativacao layer 1 %d",layers[0]); //func at
+	sprintf(tmp,"\n funcao ativacao layer 1 %d",func_ativ[0]); //func at
 	set_log(tmp);
 	for(i = 1; i < numero_layers; i++){
 		func_ativ = realloc(func_ativ,i*sizeof(int));
 		fscanf(fentrada,"%d",&func_ativ[i]);
-		sprintf(tmp,"\nfuncao ativacao layer %d %d",i,layers[i]);
+		sprintf(tmp,"\nfuncao ativacao layer %d %d",i,func_ativ[i]);
 		set_log(tmp);
 	}
 

@@ -24,6 +24,8 @@ struct fann * create_neural_net( const unsigned int* layers,
 		fann_set_activation_function_layer( ann,layer_activation_function[count_layer],count_layer);
 
 	set_log("rede criada\n");
+	    fann_print_parameters(	ann	);
+	 printf("atalho %d\n",fann_get_network_type(ann));
 
 	return ann;
 
