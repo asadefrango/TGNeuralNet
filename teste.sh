@@ -12,8 +12,8 @@ echo -e " ${GREEN} EXECUTANDO ${RED} GEN_TRAIN ${NC}  "
 echo -e " ${GREEN} FIM DE  ${YELLOW} GEN_TRAIN ${NC} "
 
 echo -e " ${GREEN} EXECUTANDO ${RED} TRAIN ${NC}  "
-#./bin/train -s ./data/rede_neural_treinada/rede_treinada.net -e 0.01 -r 1000 -m 10000 -t ./data/arquivo_de_treino/dados_para_treino.dat -n ./data/rede_neural/rede_neural.net 
-./bin/train -s ./data/rede_neural_treinada/rede_treinada.net -e 0.000000001 -r 1000 -m 10000 -t ./data/arquivo_de_treino/treino.dat -n ./data/rede_neural/rede_neural.net 
+#./bin/train -s ./data/rede_neural_treinada/rede_treinada.net -e 0.0000000001 -r 1000 -m 10000 -t ./data/arquivo_de_treino/dados_para_treino.dat -n ./data/rede_neural/rede_neural.net 
+./bin/train -s ./data/rede_neural_treinada/rede_treinada.net -e 0.000000001 -r 1000 -m 10000 -t ./data/arquivo_de_treino/exemplo.dat -n ./data/rede_neural/rede_neural.net 
 echo -e " ${GREEN} FIM DE  ${YELLOW} TRAIN ${NC}  "
 
 echo -e " ${GREEN} EXECUTANDO ${RED} EXEC_NEURAL ${NC}  "
