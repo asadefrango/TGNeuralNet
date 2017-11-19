@@ -1,4 +1,4 @@
-# Ferramentas para Rastreamento Automático de Primeiras Quebras em Dados Sísmicos
+Ferramentas para Rastreamento Automático de Primeiras Quebras em Dados Sísmicos
 =================================================================================
 
 Esse repositório contém uma coletânea de ferramentas e tem como objetivo detectar primeiras quebras de ondas em dados sismicos por meio de técnicas computacionais baseadas em **redes neurais**.
