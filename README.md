@@ -6,17 +6,25 @@ Esse repositório contém uma coletânea de ferramentas e tem como objetivo dete
 ## Modo de usar
 ---------------
 Para rastrear as primeiras quebras de onda de um dado sísimico em um arquivo binário do tipo: 
+```
+**float**
 
 **float**
+
 **float**
+
+**.**
+
+**.**
+
+**.**
+
 **float**
-**.**
-**.**
-**.**
-**float**
+
 **float** 
-**float**
 
+**float**
+```
 é necessário o seguinte procedimento: 
 
 1. Criar uma rede neural
