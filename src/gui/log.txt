@@ -1,0 +1,52 @@
+
+
+CREATE
+
+arquivo de entrada /home/andre/TGNeuralNet/src/gui/par.txt
+
+numero de layers 3
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 2 100
+
+numero de neuronios no layer 3 100
+
+ atalhos? 0
+
+ funcao ativacao layer 1 3
+
+funcao ativacao layer 1 0
+
+funcao ativacao layer 2 3
+rede criada
+
+
+FIM CREATE
+ 
+
+
+CREATE
+
+arquivo de entrada /home/andre/TGNeuralNet/src/gui/par.txt
+
+numero de layers 3
+
+numero de neuronios no layer 1 100
+
+numero de neuronios no layer 2 50
+
+numero de neuronios no layer 3 1
+
+ atalhos? 1
+
+ funcao ativacao layer 1 3
+
+funcao ativacao layer 1 3
+
+funcao ativacao layer 2 5
+rede criada
+
+
+FIM CREATE
+ 
