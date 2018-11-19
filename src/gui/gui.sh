@@ -150,13 +150,13 @@ etapa_preparar_dados_de_treino(){
 
 	zenity --info --text="Escolha um local e um nome para salvar o arquivo de saida."
 	nome_saida=$(zenity --file-selection --save --title="Arquivo de Saida")
-	echo -e "nome entrada $nome_saida \n"
+	echo -e "nome saida $nome_saida \n"
 
 	zenity --info --text="Escolha o arquivo com a lista de Picks."
 	nome_lista=$(zenity --file-selection --title="Selecione a lista de picks")
-	echo -e "nome entrada $nome_lista \n"
-	
-	
+	echo -e "nome lista $nome_lista \n"
+
+
 	numero_entrada=$(zenity --entry \
 			--title="Numero de entradas" \
 			--text="Entre com o número de neuronios na camada de entrada (inteiro):" \
@@ -195,7 +195,7 @@ etapa_preparar_dados_de_treino(){
 
 	esac
 	echo -e "numero $numero_saida \n"
-	
+
 	posicao_janela=$(zenity --entry \
 			--title="Posição do picks na janela" \
 			--text="Posição do picks na janela" \
@@ -273,7 +273,136 @@ etapa_preparar_dados_de_treino(){
 	esac
 
 	echo -e "numero $taxa_amostragem \n"
+	
+	../../bin/gen_train -s "$nome_saida" -e "$nome_entrada"  -l "$nome_lista"  -i "$numero_entrada" -o "$numero_saida" -p "$posicao_janela" -t "$numero_tracos" -d "$numero_amostras" -x "$taxa_amostragem"
 }
+
+
+
+etapa_treinar_rede(){
+
+
+
+	zenity --info --text="Escolha o arquivo com a rede neural."
+	nome_rede=$(zenity --file-selection --save --title="Arquivo de Entrada")
+	echo -e "nome entrada $nome_rede \n"
+
+	zenity --info --text="Escolha um local e um nome para salvar a rede treinada."
+	nome_saida=$(zenity --file-selection --save --title="Arquivo de Saida")
+	echo -e "nome saida $nome_saida \n"
+	
+	zenity --info --text="Escolha o arquivo de treino."
+	nome_treino=$(zenity --file-selection --save --title="Arquivo de treino")
+	echo -e "nome treino $nome_treino \n"
+
+
+
+
+	erro_des=$(zenity --entry \
+			--title="Erro desejado" \
+			--text="Entre com o erro desejado" \
+			--entry-text "0.0000000001")
+	case $? in
+		0)
+			echo -e "\n erro desejado  \"$erro_des\"\n";;
+		1)
+			echo -e "\ncancelado\n"
+			zenity --info --text="Não existe nada pra fazer!"
+			exit ;;
+		-1)
+			echo -e "\nAn unexpected error has occurred.\n"
+			exit
+			;;
+
+	esac
+
+	echo -e "numero $erro_des \n"
+
+
+
+	numero_epocas_rep=$(zenity --entry \
+			--title="Numero de epocas" \
+			--text="Entre com o numero de epocas para reportar" \
+			--entry-text "1000")
+	case $? in
+		0)
+			echo -e "\n epoca reportar  \"$numero_epocas_rep\"\n";;
+		1)
+			echo -e "\ncancelado\n"
+			zenity --info --text="Não existe nada pra fazer!"
+			exit ;;
+		-1)
+			echo -e "\nAn unexpected error has occurred.\n"
+			exit
+			;;
+
+	esac
+
+	echo -e "numero $numero_epocas_rep \n"
+
+
+	numero_max_epocas=$(zenity --entry \
+			--title="Numero maximo de epocas" \
+			--text="Entre com o numero maximo de epocas para treinar" \
+			--entry-text "10000")
+	case $? in
+		0)
+			echo -e "\n maximo de epocas \"$numero_epocas_rep\"\n";;
+		1)
+			echo -e "\ncancelado\n"
+			zenity --info --text="Não existe nada pra fazer!"
+			exit ;;
+		-1)
+			echo -e "\nAn unexpected error has occurred.\n"
+			exit
+			;;
+
+	esac
+
+	echo -e "numero $numero_epocas_rep \n"
+
+
+	../../bin/train -s "$nome_saida" -n "$nome_rede" -t "$nome_treino" -e "$erro_des" -r "$numero_epocas_rep" -m "$numero_max_epocas" 
+
+
+}
+
+
+etapa_executar(){
+
+
+
+
+	
+	zenity --info --text="Escolha o arquivo com a rede neural."
+	nome_rede=$(zenity --file-selection --save --title="Arquivo da Rede")
+	echo -e "nome rede $nome_rede \n"
+
+
+	zenity --info --text="Escolha o arquivo para processar."
+	nome_entrada=$(zenity --file-selection --save --title="Arquivo de Entrada")
+	echo -e "nome entrada $nome_entrada \n"
+
+	zenity --info --text="Escolha o nome do arquivo de saida."
+	nome_saida=$(zenity --file-selection --save --title="Arquivo de Saida")
+	echo -e "nome saida $nome_saida \n"
+	
+	../../bin/exec -s "$nome_saida" -e "$nome_entrada" -r "$nome_rede" 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -284,6 +413,15 @@ ESCOLHA=$(zenity --list \
 		--text="Selecione o procedimento desejado"\
 		--column="Ação" \
 		"Criar Rede" "Preparar Dados de Treino" "Treinar Rede" "Executar")
+
+
+
+
+
+
+
+
+
 
 
 
@@ -300,9 +438,11 @@ case "$ESCOLHA" in
 		;;
 	"Treinar Rede")
 		echo "etapa treino\n"
+		etapa_treinar_rede
 		;;
 	"Executar")
 		echo "executar\n"
+
 		;;
 	*)
 		echo "resto\n"
